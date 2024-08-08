@@ -28,9 +28,11 @@ const Dashboard = () => {
 
     return (
         <div className="dashboard">
-            <h2>Welcome, {user.username}</h2>
+            <div >
+            <h2>Welcome,</h2>
             <LinkForm addLink={addLink} />
-            <LinkList links={links} />
+            </div>
+            <div className='lists'><LinkList links={links} /></div>
         </div>
     );
 };

@@ -12,10 +12,24 @@ const LinkForm = ({ addLink }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} required />
-            <input type="url" placeholder="URL" value={url} onChange={(e) => setUrl(e.target.value)} required />
-            <button type="submit">Add Link</button>
+        <form onSubmit={handleSubmit} className="link-form">
+            <input 
+                type="text" 
+                className="link-form-title" 
+                placeholder="Title" 
+                value={title} 
+                onChange={(e) => setTitle(e.target.value)} 
+                required 
+            />
+            <input 
+                type="url" 
+                className="link-form-url" 
+                placeholder="URL" 
+                value={url} 
+                onChange={(e) => setUrl(e.target.value)} 
+                required 
+            />
+            <button type="submit" className="link-form-button">Add Link</button>
         </form>
     );
 };
