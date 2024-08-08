@@ -24,7 +24,6 @@ const Navbar = () => {
             <div className="hamburger" onClick={toggleMenu}>
                 <div></div>
                 <div></div>
-                <div></div>
             </div>
             <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
                 {!user ? (
@@ -35,7 +34,6 @@ const Navbar = () => {
                 ) : (
                     <>
                         <span>Welcome, {user.username}</span>
-                        <NavLink to="/dashboard">Dashboard</NavLink>
                         <button onClick={handleLogout}>Logout</button>
                     </>
                 )}

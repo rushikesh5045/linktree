@@ -65,7 +65,7 @@ body {
 
 @media (max-width: 375px) {
     .auth-form input, .auth-form button, .link-list input, .link-list button {
-        max-width: 220px;
+        max-width: 200px;
     }
 }
 
