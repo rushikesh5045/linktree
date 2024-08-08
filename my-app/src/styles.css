@@ -63,10 +63,11 @@ body {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .auth-form input, .auth-form button, .link-list input, .link-list button {
-        max-width: 200px;
+        max-width: 280px;
     }
+ 
 }
 
 /* Existing CSS */
